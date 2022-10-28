@@ -312,6 +312,11 @@ figcaption {
   max-width: 20rem;
 }
 
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .container-large {
   width: 100%;
   max-width: 80rem;
@@ -3025,7 +3030,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000111;
+  background-color: transparent;
 }
 
 .navbar2_link {
@@ -3123,6 +3128,34 @@ figcaption {
   cursor: pointer;
 }
 
+.gradient-ball-left {
+  position: absolute;
+  left: -8%;
+  top: -11%;
+  right: auto;
+  bottom: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: rgba(74, 100, 199, 0.4);
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+}
+
+.gradient-ball-right {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -34%;
+  bottom: -34%;
+  width: 800px;
+  height: 800px;
+  border-radius: 300px;
+  background-color: rgba(91, 49, 220, 0.5);
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -3142,6 +3175,11 @@ figcaption {
 
   .hide-tablet {
     display: none;
+  }
+
+  .main-wrapper {
+    position: relative;
+    z-index: 2;
   }
 
   .max-width-full-tablet {
@@ -3604,6 +3642,14 @@ figcaption {
   .navbar2_language {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
+  }
+
+  .gradient-ball-right {
+    right: -44%;
+    bottom: -24%;
+    z-index: 0;
+    width: 600px;
+    height: 600px;
   }
 }
 
